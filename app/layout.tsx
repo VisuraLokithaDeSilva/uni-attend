@@ -33,7 +33,6 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         {children}
-        {/* මෙතනට ඔයාගේ අලුත් Measurement ID එක ඇතුළත් කළා */}
         <GoogleAnalytics gaId="G-VX4V6D9Q1V" />
       </body>
     </html>
