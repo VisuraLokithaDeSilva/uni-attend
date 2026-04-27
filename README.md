@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎓 UniAttend - Student Attendance Management System
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-Black?style=for-the-badge&logo=next.js&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-First, run the development server:
+**UniAttend** is a comprehensive full-stack web application tailored specifically for university students to track their academic attendance in real-time, ensuring they meet mandatory exam requirements.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 The Core Problem & Motivation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+In our university, it is a strict academic policy that students must maintain a minimum of **80% attendance** to be eligible to sit for their final examinations. 
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Recently, a heartbreaking situation occurred where a significant number of my own batchmates at the **Trincomalee Campus, Eastern University, Sri Lanka**, were disqualified from taking their exams. The primary reason wasn't a lack of effort, but a lack of visibility—they simply had no real-time way to calculate and track their attendance percentages against the total conducted hours.
 
-## Learn More
+Seeing my friends lose their hard-earned exam opportunities inspired me to build a solution. I developed **UniAttend** specifically for my batchmates. This system eliminates the guesswork, providing a transparent, real-time dashboard so that no student ever misses an exam again due to a miscalculated attendance percentage.
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 👤 For Students
+- **Real-Time Dashboard:** View exactly how many hours you have attended versus the total hours conducted for each specific subject.
+- **Dynamic Percentage Calculation:** Instantly calculates your attendance percentage. It highlights in **Green** if you are above the safe 80% mark, and in **Red** if you are at risk.
+- **One-Click Logging:** A simple, intuitive interface to log daily attended hours.
+- **History Tracking:** Review previously logged attendance records to ensure accuracy.
+- **Gamified Leaderboard 🏆:** A ranking system that displays batchmates' overall attendance percentages, encouraging healthy competition and better attendance rates.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🛡️ For Administrators
+- **Subject Management:** Admins can dynamically update the "Total Conducted Hours" for any subject as the semester progresses.
+- **User Credential Management:** Ability to securely reset passwords for students who lose their login access.
 
-## Deploy on Vercel
+## 🛠️ Technical Architecture
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This application was built with modern web technologies to ensure scalability, speed, and security.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Frontend:** Built with **Next.js (App Router)** for fast rendering and seamless routing.
+- **Styling:** **Tailwind CSS** for a fully responsive, mobile-first, and clean user interface.
+- **Database & Authentication:** **Supabase (PostgreSQL)** handles secure user authentication, row-level security (RLS), and real-time database queries.
+- **Deployment:** Hosted on **Vercel** for continuous integration and rapid deployment.
+
+---
+
+## ⚙️ Local Development Setup
+
+If you wish to clone this repository and run the project locally on your machine, follow these steps:
+
+### Prerequisites
+- Node.js installed on your machine.
+- A Supabase account and project.
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/VisuraLokithaDeSilva/uni-attend.git](https://github.com/VisuraLokithaDeSilva/uni-attend.git)
