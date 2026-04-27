@@ -209,12 +209,10 @@ export default function Dashboard() {
   const todayStr = new Date().toISOString().split('T')[0]; 
 
   return (
-    // p-4 md:p-8 මඟින් ෆෝන් එකේදී padding එක අඩු කරලා ලොකු තිර වලදී වැඩි කරනවා
-    <div className="min-h-screen bg-gray-100 p-4 md:p-8 text-black relative">
+    <div className="min-h-screen bg-gray-100 p-4 md:p-8 text-black relative flex flex-col">
       <Toaster position="top-right" />
 
-      <div className="max-w-6xl mx-auto">
-        {/* ෆෝන් එකේදී මෙනු එක ලස්සනට පෙළගස්වනවා */}
+      <div className="max-w-6xl mx-auto flex-1 w-full">
         <div className="flex flex-col md:flex-row justify-between items-center mb-6 md:mb-8 bg-white p-4 rounded-lg shadow gap-4 text-center md:text-left">
           <h1 className="text-xl md:text-2xl font-bold text-blue-600">Welcome, {user.full_name}</h1>
           <div className="flex flex-wrap justify-center md:justify-end gap-2 w-full md:w-auto">
@@ -294,7 +292,6 @@ export default function Dashboard() {
           )}
         </div>
 
-        {/* මේක ෆෝන් එකේදී එහාට මෙහාට අදින්න පුළුවන් වෙන්න overflow-x-auto දාලා තියෙන්නේ */}
         <div className="bg-white p-4 md:p-6 rounded-lg shadow-md w-full overflow-hidden">
           <h2 className="text-lg md:text-xl font-bold mb-4">My Attendance Summary</h2>
           <div className="overflow-x-auto">
@@ -327,6 +324,20 @@ export default function Dashboard() {
             </table>
           </div>
         </div>
+
+        {/* Footer Section */}
+        <footer className="mt-12 py-8 border-t border-gray-200 text-center text-gray-600">
+          <p className="font-semibold text-base">
+            © 2026 UniAttend - All Rights Reserved
+          </p>
+          <p className="mt-1 text-sm">
+            Developed by <span className="font-bold text-blue-600">Visura De Silva</span>
+          </p>
+          <p className="text-xs text-gray-500 mt-1 uppercase tracking-wider">
+            Trincomalee Campus, Eastern University, Sri Lanka
+          </p>
+        </footer>
+
       </div>
 
       {showHistory && (
